@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .cover-container {
+            background-image: url('/blogwebsite/images/library.jpg');
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .content {
+            background-color: #7c9a6a;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 100px;
+            border-radius: 10px;
+            height: 300px;
+        }
+        .enter-btn {
+            background-color: #7c9a6a;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            color: white;
+            border: 2px solid #C8B282;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="cover-container">
+        <div id="content" class="content">
+            <h1 id="welcomeMessage">Welcome to My Library</h1>
+            <p id="last-visit-display", class = "last-visit"></p>
+            <p id="timeOfDayMessage">
+            </p>
+            <p id="time"></p>
+            <div class="weather-box">
+              <p id="city-name">Loading...</p>
+              <p class="temperature" id="temperature"></p>
+              <p id="description"></p>
+            </div>
+            <form id="nameForm" class="nameForm">
+              <input id="nameInput" type="text" placeholder="Enter Name"></input>
+            </form>
+        </div>
+      </div>
+    </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
